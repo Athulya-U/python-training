@@ -1,0 +1,22 @@
+N=10
+K=5
+
+R=N
+C=1
+
+while  C != 0:
+  d =int(input("no of candies:"))
+
+  if d > R:
+    print("INVALID INPUT")
+    break
+
+  R = R-d
+  print("no of canddies sol:",d)
+
+  if R <= K:
+      R = N
+
+  print("no of candies available:", R)
+
+  c =int(input("enter 1 to continue ,0 to stop: "))
