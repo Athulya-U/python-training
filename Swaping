@@ -1,0 +1,25 @@
+a=int(input("enter first number:"))
+b=int(input("enter second number:"))
+print("original value:",a,b)
+x=a
+y=b
+temp=x
+x=y
+y=temp
+print("using temp:",x,y)
+x=a
+y=b
+x,y=y,x
+print("using comma",x,y)
+x=a
+y=b
+x=x+y
+y=x-y
+x=x-y
+print("using + and -:",x,y)
+x=a
+y=b
+x=x^y
+y=x^y
+x=x^y
+print("using ^:",x,y)
